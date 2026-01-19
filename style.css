@@ -220,6 +220,37 @@ nav {
 .episode-container {
   padding: 100px 0;
 }
+/* host section */
+.host {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+  padding: 40px;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+}
+.host-title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.host-sub-title {
+  margin: 16px 0 24px 0;
+}
+.host-social {
+  display: flex;
+  align-items: center;
+}
+.host-social li {
+  list-style: none;
+}
+.host-social a {
+  margin-right: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid rgba(83, 60, 114, 1);
+}
 /* responsive design */
 
 /* for mobile devices */
@@ -270,6 +301,16 @@ nav {
   }
   .primary-title {
     font-size: 2rem;
+  }
+  /* host  */
+  .host {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    padding: 20px 5px 40px 5px;
+  }
+  .host-social {
+    justify-content: center;
   }
 }
 /* for tablets */
