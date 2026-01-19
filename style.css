@@ -229,6 +229,9 @@ nav {
   border-radius: 40px;
   background: rgba(53, 17, 101, 0.4);
 }
+.host-container {
+  padding-bottom: 100px;
+}
 .host-title {
   color: rgba(255, 255, 255, 1);
   font-size: 2rem;
@@ -248,8 +251,36 @@ nav {
   margin-right: 8px;
   padding: 10px;
   box-sizing: border-box;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 1px solid rgba(83, 60, 114, 1);
+}
+/* footer */
+footer {
+  padding: 100px 0 100px 0;
+  background-color: rgba(35, 14, 61, 1);
+}
+/* footer menu */
+footer {
+  background-image: url(assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-menu li {
+  list-style: none;
+  margin: 32px 0 40px 0;
+}
+.footer-menu a {
+  text-decoration: none;
+  color: rgb(185, 184, 184);
+  margin-right: 40px;
+}
+.footer-menu a > i {
+  margin-right: 8px;
 }
 /* responsive design */
 
@@ -311,6 +342,17 @@ nav {
   }
   .host-social {
     justify-content: center;
+  }
+  .footer-menu {
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-menu li {
+    margin: 16px 0 0px 0;
+  }
+  footer img {
+    width: 50%;
   }
 }
 /* for tablets */
