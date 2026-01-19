@@ -182,7 +182,44 @@ nav {
 .feature-item-4 {
   grid-column: 1 / span 2;
 }
+/* episode item */
+.episode-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+.episode-item {
+  border-radius: 24px;
+  background: rgba(37, 13, 68, 1);
+}
+.episode-items iframe {
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+}
 
+.episode-title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.episode-content {
+  padding: 24px;
+}
+.episode-sub-title {
+  margin: 12px 0;
+}
+.episode-time {
+  display: flex;
+  align-items: center;
+}
+.episode-time img {
+  margin-right: 8px;
+}
+.episode-container {
+  padding: 100px 0;
+}
 /* responsive design */
 
 /* for mobile devices */
@@ -193,6 +230,7 @@ nav {
   .d-none {
     display: block;
   }
+  /* menu */
   .menu,
   .btn-primary {
     display: none;
@@ -200,6 +238,7 @@ nav {
   nav {
     max-width: 98%;
   }
+  /* about */
   .about-container br {
     display: none;
   }
@@ -209,11 +248,28 @@ nav {
     gap: 32px;
     padding: 50px 0 60px 0;
   }
+  /* feature */
   .feature-items {
     grid-template-columns: repeat(1, 1fr);
   }
   .feature-item {
     grid-column: 1 / span 1;
+  }
+  /* episodes */
+  .episode-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .episode-items iframe {
+    height: auto;
+  }
+  .episode-title {
+    font-size: 1.25rem;
+  }
+  .episode-content {
+    padding: 16px;
+  }
+  .primary-title {
+    font-size: 2rem;
   }
 }
 /* for tablets */
@@ -245,5 +301,12 @@ nav {
   }
   .feature-item-1 {
     grid-row: 1 / span 1;
+  }
+  /* episodes */
+  .episode-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .episode-items iframe {
+    height: auto;
   }
 }
