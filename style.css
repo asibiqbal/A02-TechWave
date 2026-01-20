@@ -125,6 +125,21 @@ nav {
   background: rgba(0, 255, 136, 1);
   top: 0;
   left: 70%;
+  animation: pulse-animation 2s infinite;
+}
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(0, 255, 136, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+  }
 }
 .banner-title {
   color: rgba(255, 255, 255, 1);
