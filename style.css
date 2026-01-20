@@ -340,7 +340,7 @@ footer {
     height: 200px;
   }
   .banner-img img {
-    width: 80px;
+    width: 60px;
     height: 80px;
   }
   .banner-btn-container button {
@@ -407,6 +407,9 @@ footer {
   }
   footer img {
     width: 50%;
+  }
+  footer {
+    padding: 40px 0;
   }
 }
 /* for tablets */
