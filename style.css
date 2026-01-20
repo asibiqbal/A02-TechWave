@@ -87,13 +87,44 @@ nav {
 /* banner */
 .banner-container {
   text-align: center;
-  padding: 0 0 80px 0;
-  border: 1px solid white;
-  /* background-image: url(assets/hero-bg.png);
+  padding: 80px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(assets/hero-bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
-  display: none;
+  background-size: cover, contain;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 8px solid rgba(42, 24, 108, 1);
+  background: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  position: relative;
+}
+.new {
+  position: absolute;
+  color: rgba(26, 11, 46, 1);
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 8px 16px 8px 16px;
+  border-radius: 1000px;
+  box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+  background: rgba(0, 255, 136, 1);
+  top: 0;
+  left: 70%;
 }
 .banner-title {
   color: rgba(255, 255, 255, 1);
@@ -116,6 +147,9 @@ nav {
 }
 .banner-btn-container i {
   margin-right: 8px;
+}
+.new {
+  font-size: 1rem;
 }
 /* about section*/
 .about-container {
@@ -198,7 +232,6 @@ nav {
   width: 100%;
   border-radius: 24px 24px 0 0;
 }
-
 .episode-title {
   color: rgba(255, 255, 255, 1);
   font-size: 1.5rem;
@@ -264,6 +297,7 @@ footer {
   background-image: url(assets/footer-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: 100%;
 }
 .footer-menu {
   display: flex;
@@ -300,6 +334,26 @@ footer {
   nav {
     max-width: 98%;
   }
+  /* banner */
+  .wrapper {
+    width: 200px;
+    height: 200px;
+  }
+  .banner-img img {
+    width: 80px;
+    height: 80px;
+  }
+  .banner-btn-container button {
+    display: inline;
+    margin-bottom: 10px;
+  }
+  .banner-title {
+    font-size: 3rem;
+  }
+  .banner-container {
+    background-size: contain cover;
+  }
+
   /* about */
   .about-container br {
     display: none;
@@ -367,7 +421,11 @@ footer {
   .btn-primary {
     display: none;
   }
-
+  /* banner */
+  .banner-btn-container button {
+    display: inline;
+    margin-bottom: 10px;
+  }
   .about-container br {
     display: none;
   }
